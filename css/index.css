@@ -1,0 +1,239 @@
+@font-face {
+  font-family: artist;
+  src: url("../font/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: bodyfonts;
+  src: url("../font/Cinzel-VariableFont_wght.ttf");
+}
+:root {
+  --fontcolor: #c18414;
+  --color1: #d9c6a0;
+  --color2: #f5f0e1;
+  --color3: #a68a6b;
+  --color4: #7a5b3a;
+  --color5: #4b3d2a;
+}
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1);
+  background-image: url("../images/COTA/BG1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: bodyfonts;
+}
+.same-color {
+  color: var(--fontcolor);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 50px;
+
+  background-color: var(--color2);
+}
+.body-title .font1 {
+  font-size: 2rem;
+  margin: 0;
+}
+.artist-title {
+  font-family: artist;
+  letter-spacing: 2rem;
+}
+.logo {
+  width: 19%;
+}
+.header img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.menu-button {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.menu-button a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  transition-duration: 0.3s;
+}
+.menu-button a:hover {
+  font-weight: bold;
+  color: rgb(94, 86, 86);
+  border-bottom: 1px solid rgb(94, 86, 86);
+
+  transition-duration: 0.3s;
+}
+.menu-button a:nth-child(1) {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.body-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 10px 40px;
+  width: 50%;
+}
+
+.portal {
+  display: flex;
+  padding: 20px;
+  align-items: stretch;
+}
+.body-title .artist-title {
+  font-size: 6rem;
+  margin: 0;
+}
+.body-title .font2 {
+  font-size: 5rem;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+.content {
+  width: 70%;
+}
+.body-image img {
+  width: 100%;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  background-color: var(--fontcolor);
+  padding: 5px 0px;
+  position: sticky;
+  bottom: 0;
+  font-size: 12px;
+}
+footer img {
+  width: 10%;
+  margin-right: 12px;
+}
+.followus a img {
+  width: 30%;
+  margin-right: 0;
+  border-radius: 10px;
+
+  transition-duration: 0.5s;
+}
+.followus a img:hover {
+  background-color: #3232327a;
+  transition-duration: 0.5s;
+}
+
+footer div {
+  width: 20%;
+}
+
+footer div div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.body-image {
+  display: flex;
+}
+.body-image img {
+  display: block;
+}
+.body-image .one {
+  display: block;
+}
+.body-image .two {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    padding: 5px 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  footer div {
+    width: 30%;
+  }
+  footer div div {
+    justify-content: center;
+  }
+  .body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 40px;
+  }
+  .body-title .artist-title {
+    font-size: 4rem;
+  }
+  .body-title .font2 {
+    font-size: 3rem;
+  }
+  .body-title .font1 {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 25%;
+  }
+  .header {
+    padding: 5px 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .followus {
+    font-size: 10px;
+  }
+  .followus div a img {
+    margin-top: 5px;
+  }
+  .body-image .one {
+    display: none;
+  }
+  .body-image .two {
+    display: block;
+  }
+  footer div {
+    font-size: 7px;
+    width: 45%;
+  }
+  .content {
+    font-size: 10px;
+    width: 100%;
+  }
+  .body-title .font1 {
+    font-size: 1rem;
+  }
+  .body-title .font2 {
+    font-size: 3rem;
+  }
+  .menu-button {
+    width: 60%;
+    justify-content: space-between;
+  }
+  .menu-button a {
+    font-size: 10px;
+  }
+  .portal {
+    height: 85vh;
+    flex-direction: column;
+  }
+  .body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  .body-title .artist-title {
+    font-size: 2rem;
+    letter-spacing: 20px;
+  }
+}

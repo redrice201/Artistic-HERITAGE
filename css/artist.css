@@ -1,0 +1,328 @@
+@font-face {
+  font-family: artist;
+  src: url("../font/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: bodyfonts;
+  src: url("../font/Cinzel-VariableFont_wght.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --fontcolor: #c18414;
+  --color1: #d9c6a0;
+  --color2: #f5f0e1;
+  --color3: #a68a6b;
+  --color4: #7a5b3a;
+  --color5: #4b3d2a;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1);
+  background-image: url("../images/COTA/BG2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: bodyfonts;
+  scroll-behavior: smooth;
+}
+.same-color {
+  color: var(--fontcolor);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 50px;
+
+  background-color: var(--color2);
+}
+.body-title .font1 {
+  font-size: 2rem;
+  margin: 0;
+}
+.artist-title {
+  font-family: artist;
+  letter-spacing: 2rem;
+}
+.logo {
+  width: 19%;
+}
+.header img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.menu-button {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.menu-button a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  transition-duration: 0.5s;
+}
+.menu-button a:hover {
+  font-weight: bold;
+  color: rgb(94, 86, 86);
+  border-bottom: 1px solid rgb(94, 86, 86);
+
+  transition-duration: 0.5s;
+}
+.menu-button a:nth-child(2) {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.button-reinassance {
+  z-index: 1;
+  display: flex;
+  position: sticky;
+  top: 0;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  background: rgb(230, 223, 202);
+  background: linear-gradient(
+    114deg,
+    rgba(230, 223, 202, 1) 19%,
+    rgba(158, 132, 90, 1) 65%
+  );
+  align-items: center;
+}
+.button-reinassance .reinassance {
+  padding: 20px;
+  font-size: 35px;
+}
+.button-reinassance .baroque {
+  padding: 20px;
+  font-size: 35px;
+}
+.button-reinassance input[type="radio"] {
+  display: none;
+}
+.button-reinassance a {
+  color: #000000;
+  text-decoration: none;
+  transition-duration: 0.5s;
+
+  cursor: pointer;
+}
+.button-reinassance a:hover {
+  text-decoration: underline;
+
+  font-weight: 500;
+  transition-duration: 0.5s;
+}
+.button-reinassance a:focus {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.divider {
+  width: 2px;
+  height: 40px;
+  background-color: gray;
+  color: #00000016;
+  margin: 0 10px;
+}
+
+.description {
+  padding: 20px;
+  font-size: 15px;
+  padding-top: 100px;
+}
+.images {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
+}
+.artist-content {
+  width: 30%;
+  position: relative;
+}
+.artist-image {
+  width: 100%;
+  height: 60%;
+}
+.artist-image img {
+  width: 100%;
+
+  height: 100%;
+}
+.artist-seperate {
+  position: absolute;
+  top: 0;
+}
+.artist-seperate img {
+  width: 100%;
+}
+.artist-seperate1 {
+  position: relative;
+}
+.artist-seperate1 .name {
+  position: absolute;
+  top: 25%;
+  font-weight: bold;
+  width: 100%;
+}
+.artist-text {
+  position: relative;
+  margin: 30px;
+  background-color: #eac069;
+  height: 35%;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 20px;
+}
+.divider-x {
+  width: 90%;
+  height: 2px;
+  background-color: black;
+  margin: 0 10px;
+}
+hr {
+  color: black;
+  padding: 0px 12px;
+}
+.height {
+  padding: 5px 20px;
+  padding-top: 15%;
+}
+.height1 {
+  padding: 5px 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .button-reinassance .baroque {
+    font-size: 25px;
+  }
+  .button-reinassance .reinassance {
+    font-size: 25px;
+  }
+  .artist-text {
+    margin: 10px;
+
+    font-size: 11px;
+  }
+  .artist-content {
+    width: 40%;
+    margin-bottom: 50px;
+  }
+  footer {
+    padding: 5px 10px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  footer div {
+    width: 30%;
+  }
+  footer div div {
+    justify-content: center;
+  }
+  .body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 40px;
+  }
+  .body-title .artist-title {
+    font-size: 4rem;
+  }
+  .body-title .font2 {
+    font-size: 3rem;
+  }
+  .body-title .font1 {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 25%;
+  }
+  .header {
+    padding: 5px 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .height1 {
+    padding: 5px 5px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .height1 {
+    padding: 5px 5px;
+  }
+  .images {
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .button-reinassance .reinassance {
+    font-size: 18px;
+  }
+  .button-reinassance .baroque {
+    font-size: 18px;
+  }
+  .artist-text {
+    font-size: 9px;
+    width: 100%;
+    height: 45%;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  .artist-content {
+    margin-bottom: 10px;
+    width: 45%;
+  }
+
+  .artist-image {
+    height: 45%;
+  }
+  footer div {
+    font-size: 7px;
+    width: 45%;
+  }
+  .content {
+    font-size: 10px;
+    width: 100%;
+  }
+  .body-title .font1 {
+    font-size: 1rem;
+  }
+  .body-title .font2 {
+    font-size: 3rem;
+  }
+  .menu-button {
+    width: 60%;
+    justify-content: space-between;
+  }
+  .menu-button a {
+    font-size: 10px;
+  }
+  .portal {
+    flex-direction: column;
+  }
+  .body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  .body-title .artist-title {
+    font-size: 2rem;
+    letter-spacing: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .menu-button {
+    width: 60%;
+    justify-content: space-between;
+  }
+}

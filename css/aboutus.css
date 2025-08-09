@@ -1,0 +1,278 @@
+@font-face {
+  font-family: artist;
+  src: url("../font/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: bodyfonts;
+  src: url("../font/Cinzel-VariableFont_wght.ttf");
+}
+:root {
+  --fontcolor: #c18414;
+  --color1: #d9c6a0;
+  --color2: #f5f0e1;
+  --color3: #a68a6b;
+  --color4: #7a5b3a;
+  --color5: #4b3d2a;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color1);
+  background-image: url("../images/COTA/BG1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: bodyfonts;
+  scroll-behavior: smooth;
+}
+.same-color {
+  color: var(--fontcolor);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 50px;
+
+  background-color: var(--color2);
+}
+.body-title .font1 {
+  font-size: 2rem;
+  margin: 0;
+}
+.artist-title {
+  font-family: artist;
+  letter-spacing: 2rem;
+}
+.logo {
+  width: 19%;
+}
+.header img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.menu-button {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.menu-button a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  transition-duration: 0.3s;
+}
+.menu-button a:hover {
+  font-weight: bold;
+  color: rgb(94, 86, 86);
+  border-bottom: 1px solid rgb(94, 86, 86);
+
+  transition-duration: 0.3s;
+}
+.menu-button a:nth-child(4) {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.about {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.about-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+.about-info1 {
+  width: 80%;
+  text-align: right;
+  font-size: 20px;
+}
+.about-image {
+  width: 50%;
+  display: flex;
+}
+
+.images-about {
+  width: 90%;
+}
+.images-about img {
+  width: 100%;
+}
+.about-title {
+  font-size: 8rem;
+  text-align: right;
+  font-family: artist;
+}
+
+.divider {
+  width: 80%;
+  height: 3px;
+  background-color: gray;
+  color: #00000016;
+  margin: 0 10px;
+}
+
+.divider1 {
+  width: 3px;
+  height: 200px;
+  background-color: gray;
+  color: #00000016;
+  margin: 0 10px;
+}
+.mission {
+  width: 45%;
+}
+.mission-vision {
+  display: flex;
+  padding: 5px 15px;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.mission-vision-p {
+  text-align: center;
+  font-size: 18px;
+}
+.title {
+  text-align: center;
+  gap: 20px;
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  color: var(--fontcolor);
+  align-items: flex-end;
+}
+.big-title {
+  font-size: 5rem;
+}
+.our {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .about-image {
+    width: 80%;
+    display: flex;
+  }
+  .about-title {
+    width: 100%;
+    font-size: 6rem;
+    text-align: center;
+  }
+  .about {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .about-info {
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .big-title {
+    font-size: 3rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .our {
+    padding: 10px;
+  }
+  .about-info1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  footer {
+    padding: 5px 10px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  footer div {
+    width: 30%;
+  }
+  footer div div {
+    justify-content: center;
+  }
+  .body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 40px;
+  }
+  .body-title .artist-title {
+    font-size: 4rem;
+  }
+  .body-title .font2 {
+    font-size: 3rem;
+  }
+  .body-title .font1 {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 25%;
+  }
+  .header {
+    padding: 5px 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about-title {
+    font-size: 4rem;
+  }
+  .big-title {
+    font-size: 1.7rem;
+  }
+  .title {
+    font-size: 1rem;
+    gap: 0px;
+  }
+  .mission-vision-p {
+    font-size: 10px;
+  }
+  .about-info1 {
+    font-size: 13px;
+  }
+  footer div {
+    font-size: 7px;
+    width: 45%;
+  }
+  .content {
+    font-size: 10px;
+    width: 100%;
+  }
+  .body-title .font1 {
+    font-size: 1rem;
+  }
+  .body-title .font2 {
+    font-size: 3rem;
+  }
+  .menu-button {
+    width: 60%;
+    justify-content: space-between;
+  }
+  .menu-button a {
+    font-size: 10px;
+  }
+  .portal {
+    flex-direction: column;
+  }
+  .body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  .body-title .artist-title {
+    font-size: 2rem;
+    letter-spacing: 20px;
+  }
+}
