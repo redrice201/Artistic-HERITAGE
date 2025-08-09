@@ -35,6 +35,7 @@ Historical background
 Artistic style and significance
 
 🛠️ Technologies Used
+
 HTML5 – Structure and layout
 
 CSS3 – Styling and design
