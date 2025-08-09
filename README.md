@@ -1,4 +1,5 @@
 🎨 Artistic-HERITAGE
+
 Artistic-HERITAGE is a website dedicated to showcasing timeless paintings and the talented artists who created them. It focuses on the Renaissance and Baroque periods, offering detailed descriptions of each painting and its creator.
 
 The platform is designed to help visitors explore art history, understand the stories behind masterpieces, and appreciate the beauty of these cultural treasures.
